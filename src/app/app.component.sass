@@ -1,0 +1,29 @@
+/* ======= src/app.component.sass ======= */
+@import ../_core/mixins.sass
+.home
+	h1
+		color: #C3002F
+		text-align: center
+		text-transform: uppercase
+	img
+		width: 150px
+		display: block
+		margin: 0 auto
+.sidebar
+	list-style: none
+	margin: 0
+	padding: 0
+	li
+		&:nth-child(1)
+			&:before
+				margin-right: 9px
+				+mtrl("")
+		&:nth-child(2)
+			&:before
+				margin-right: 9px
+				+mtrl("")
+		a
+			color: #333
+			&.active
+				font-weight: 700
+				color: #0026B2
